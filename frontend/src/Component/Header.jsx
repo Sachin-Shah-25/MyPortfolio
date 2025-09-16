@@ -1,18 +1,45 @@
 import React from 'react'
 import user1 from "../assets/user1.png"
-const myName=import.meta.env.VITE_MY_NAME
+import { Link } from 'react-router-dom'
+const myName = import.meta.env.VITE_MY_NAME
 function Header() {
   return (
-    <div className='w-full h-full border border-black-500'>
-        <div className="w-full h-full">
-
-      <div className='w-48 h-48 mx-auto'>
-        <img src={user1} alt="" className='w-full h-full object-contain' />
-      </div>
-      <div className='w-full text-center'>
-        <span className='font-bold text-xl block' >{myName}</span>
-      </div>
+    <div className='w-full  py-3  px-20 fixed left-0 top-0 flex justify-between items-center border-black-800'>
+      <div className='flex items-center'>
+        <div className='w-12 h-12'>
+          <img src={user1} className='w-full h-full object-contain' alt="" />
         </div>
+        <p className='text-md font-bold ml-3 header_name'>Sachin Shah</p>
+      </div>
+      <ul className='flex items-center gap-10 font-semibold'>
+        {[{
+          name: "Home",
+          link: "/"
+        },
+        {
+          name: "Youtube",
+          link: "https://www.youtube.com/@CodingErrors-25"
+        },
+        {
+          name: "Github",
+          link: "https://github.com/Sachin-Shah-25"
+        },
+        {
+          name: "About",
+          link: "/about"
+        },
+
+        ].map((item, ind) => {
+          return <li
+            className={` overflow-hidden relative ${ind == 3 ? "ml-[150px] bg-gray-600 rounded-full px-4 py-1 about " : "nav_links"}`}
+            key={ind}>
+            <a href={item.link}
+              rel="noopener noreferrer"
+              target={`${ind == 1 || ind == 2 ? "_blank" : ""}`}
+            >{item.name}</a></li>
+        })}
+
+      </ul>
     </div>
   )
 }

@@ -1,42 +1,224 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing:  border-box;
+  font-family: sans-serif;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.l1{
+  top: -250px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.project_container{
+  border-left: none;
+  padding-top: 10px;  
+ 
+}
+
+.git_button{
+ top: 250px;
+ transition: all 0.3s ease-in-out;
+ background-color: transparent;
+ border-top: 2px solid rgba(0, 0, 0, 0.144);
+ box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.048);
+}
+.pro{
+  transform: scale(1);
+}
+.pro:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+.pro:hover .git_button{
+  top: 0;
+}
+.thum{
+  overflow: hidden;
+}
+.thum::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 3px;
+  width: 350px;
+   transform: translate(-50%, -50%) rotate(0deg);
+  background-color:gray;
+  box-shadow: 0px 0px 10px 0px white;
+  animation: anim 6s linear infinite;
+  z-index: -1;
+  
+  
+}
+@keyframes anim {
+   from {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  
+}
+
+.about:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.nav_links::before{
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: 0;
+  background-color: white;
+  transition: all .3s ease-in-out;
+}
+
+.nav_links:hover::before{
+  width: 100px;
+  color: cyan;
+}
+
+
+
+.hr::after{
+content: "";
+width: 0%;
+height: 2px;
+background-color: rgba(0, 255, 255, 0.329);
+position: absolute;
+animation: hr 3s linear infinite alternate-reverse
+}
+
+.yt::-webkit-scrollbar{
+  width: 5px;
+}
+
+
+@keyframes hr {
+  
+  0%{
+    width: 0%;
+    opacity: 1;
+  }
+  50%{
+    width: 50%;
+    opacity: 0;
+  }
+  0%{
+    width: 0%;
+    opacity: 1;
+  }
+  
+}
+
+@media screen and (max-width:1200px) {
+  .lang{
+    height: 20rem;
+  }
+  .lang_left{
+    display: none;
+  }
+  .lang_right{
+    display: none;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+
+
+@media screen and (max-width:900px) {
+  .lang{
+    height: 24rem;
+  }
+  .lang_left{
+    display: none;
+  }
+  .lang_right{
+    display: none;
+  }
+  .YoutVideo_container{
+    height: 100vh;
+  }
+  .thum{
+    width: 150px;
+    height: 150px;
+    
   }
 }
-
-.card {
-  padding: 2em;
+@media screen and (max-width:850px) {
+  .profile_container{
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .myphoto{
+    width: 25vw;
+    height: 25vw;
+  }
+  .my_name{
+   display: flex;
+   align-items: start;
+   font-size: 4rem;
+   gap: 5;
+   flex-direction: column;
+   line-height: 0;
+  }
+  .my_name span:last-child{
+    margin-top: 55px;
+    margin-left: 0px;
+  }
+  .lang_right_content{
+    padding: 20px 10px;
+  }
+  .lang{
+    padding: 20px 10px;
+  }
+  
 }
 
-.read-the-docs {
-  color: #888;
+
+@media screen and (max-width:650px) {
+  .lang{
+    height: 35rem;
+  }
+  .myphoto{
+    width: 32vw;
+    height: 32vw;
+  }
+  
+}
+@media screen and (max-width:550px) {
+  .my_name{
+    font-size: 3rem;
+  }
+  .about_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_my_name{
+    margin-top: 10px;
+  }
+  .icons_links{
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (max-width:450px) {
+  .lang{
+    height: 45rem;
+  }
+   .myphoto{
+    width: 40vw;
+    height: 40vw;
+  }
+  
 }

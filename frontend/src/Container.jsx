@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Header from './Component/Header'
 import MyProfile from './Component/MyProfile'
-import MyAllProjects from './Component/MyAllProjects'
-import MyAllTemplates from './Component/MyAllTemplates'
+import Lang from './Component/Lang'
+import MyProjects from './Component/MyProjects'
+import YoutVideos from './Component/YoutVideos'
+import About from './Component/About'
 
-function Container() {
+function Comtainer() {
+
   return (
-    <div className='w-full h-full border border-blue-400'>
-     <MyProfile/>
-     <MyAllProjects/>
-     <MyAllTemplates/>
+    <div className="text-white w-full  overflow-auto pb-20  bg-[url('./assets/bg2.png')] bg-cover bg-center h-full">
+      <div className='h-full w-full px-[15vw] backdrop-blur-2xl'>
+        <Header />
+        <MyProfile/>
+        <Lang/>
+        <MyProjects/>
+        <YoutVideos/>
+      </div>
     </div>
   )
 }
 
-export default Container
+export default Comtainer
