@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import user1 from "../assets/user1.png"
 import { Link } from 'react-router-dom'
+import { IoMdCloseCircleOutline } from "react-icons/io";
+import { FaBars } from "react-icons/fa";
 const myName = import.meta.env.VITE_MY_NAME
 function Header() {
+  const [getTop,setTop]=useState(0)
   return (
-    <div className='w-full  py-3  px-20 fixed left-0 top-0 flex justify-between items-center border-black-800'>
-      <div className='flex items-center'>
+    <div className='w-full'>
+       <span  onClick={()=>setTop(0)} className='absolute nav_open  right-10 text-2xl font-bold text-zinc-400 cursor-pointer'> <FaBars/> </span>
+      <div style={{top:getTop}} className='header w-full  py-3  px-20 fixed left-0 top-0 flex justify-between items-center border-black-800'>
+      <span  onClick={()=>setTop(-280)} className='absolute nav_close right-10 text-2xl font-bold text-zinc-400 cursor-pointer'> <IoMdCloseCircleOutline/> </span>
+      <div className='icons flex items-center'>
         <div className='w-12 h-12'>
           <img src={user1} className='w-full h-full object-contain' alt="" />
         </div>
         <p className='text-md font-bold ml-3 header_name'>Sachin Shah</p>
       </div>
-      <ul className='flex items-center gap-10 font-semibold'>
+      <ul className='nav_link flex items-center gap-10 font-semibold'>
         {[{
           name: "Home",
           link: "/"
@@ -40,6 +46,7 @@ function Header() {
         })}
 
       </ul>
+    </div>
     </div>
   )
 }

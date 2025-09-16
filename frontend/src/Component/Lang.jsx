@@ -22,7 +22,7 @@ function Lang() {
           <div className='lang_left bg-cyan-800 capitalize px-5 py-2 rounded-full tracking-[2px]'>React</div>
           <div className='lang_right h-52 w-[1px] bg-zinc-800 ml-10'></div>
           <div className='px-10 lang_right_content'>
-            <p className=' text-sm text-zinc-500 leading-[23px]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, odio voluptatem, beatae repellat laboriosam maxime quae soluta debitis ut, culpa ipsam fugit nihil aspernatur voluptatibus officiis necessitatibus quisquam libero illo, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione ipsum quae molestias nisi maiores repudiandae provident? Sequi voluptatem, magni consequatur, ducimus, temporibus voluptatum ipsa dolores earum eligendi ab distinctio. </p>
+            <p className=' text-sm text-zinc-500 font-semibold leading-[23px]'> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, odio voluptatem, beatae repellat laboriosam maxime quae soluta debitis ut, culpa ipsam fugit nihil aspernatur voluptatibus officiis necessitatibus quisquam libero illo, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione ipsum quae molestias nisi maiores repudiandae provident? Sequi voluptatem, magni consequatur, ducimus, temporibus voluptatum ipsa dolores earum eligendi ab distinctio. </p>
           </div>
 
         </div>

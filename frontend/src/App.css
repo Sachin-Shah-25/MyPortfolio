@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   margin: 0px;
   padding: 0px;
-  box-sizing:  border-box;
-  font-family: sans-serif;
+   font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 html,body{
   width: 100%;
@@ -99,6 +100,13 @@ animation: hr 3s linear infinite alternate-reverse
   width: 5px;
 }
 
+.nav_open{
+  display: none;
+}
+.nav_close{
+  display: none;
+}
+
 
 @keyframes hr {
   
@@ -152,6 +160,34 @@ animation: hr 3s linear infinite alternate-reverse
 }
 @media screen and (max-width:850px) {
   .profile_container{
+    padding-top: 40px;
+  }
+ .icons{
+  display: none;
+ }
+  .header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #27272a;
+    height: 100vh;
+    top: -280px;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav_open{
+    display:  block;
+    top: 20px;
+  }
+  .nav_close{
+    display: block;
+  }
+  .nav_link{
+    flex-direction: column;
+  }
+  .nav_link li:last-child{
+    margin-left: 0;
+  }
+  .profile_container{
     flex-direction: column;
     align-items: center;
    
@@ -183,16 +219,27 @@ animation: hr 3s linear infinite alternate-reverse
 
 
 @media screen and (max-width:650px) {
+    .container_child{
+    padding: 5vw;
+  }
   .lang{
-    height: 35rem;
+    height: 30rem;
   }
   .myphoto{
     width: 32vw;
     height: 32vw;
   }
+  .header{
+    padding: 30px 15px;
+  }
+  .icons{
+    display: none;
+  }
   
 }
 @media screen and (max-width:550px) {
+  
+
   .my_name{
     font-size: 3rem;
   }
@@ -209,12 +256,15 @@ animation: hr 3s linear infinite alternate-reverse
     align-items: center;
     justify-content: center;
   }
+  .yt{
+    padding: 0;
+  }
   
 }
 
 @media screen and (max-width:450px) {
   .lang{
-    height: 45rem;
+    height: 35rem;
   }
    .myphoto{
     width: 40vw;

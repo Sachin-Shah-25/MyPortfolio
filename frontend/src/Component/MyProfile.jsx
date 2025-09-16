@@ -21,12 +21,12 @@ function MyProfile() {
                 </div>
             </div>
                 <div className='profile_detail'>
-                <div className='my_name_container w-full text-[6vw] '>
-                    <h1 className='my_name h-full font-sans flex gap-5 font-bold  leading-5 mt-10'><span className='flex h-full' >I'm</span> <span className='text-cyan-400 w-full h-full'>Sachin Shah</span></h1>
+                <div className='my_name_container w-full text-[5vw] '>
+                    <h1 className='my_name h-full  flex gap-5 font-bold  leading-5 mt-10'><span className='flex h-full' >I'm</span> <span className='text-cyan-400 w-full h-full'>Sachin Shah</span></h1>
                 </div>
                 
                 <div className='w-full mt-12'>
-                    <p className='text-sm'>Meet Sachin Shah is a passionate tech educator and content creator running a YouTube channel dedicated to coding tutorials and practical projects. Focusing on web development and modern JavaScript frameworks like React, he helps learners understand complex programming concepts through simple, hands-on examples. His goal is to make coding accessible, engaging, and fun for beginners and aspiring developers alike.</p>
+                    <p className='text-sm text-zinc-500 '>Meet Sachin Shah is a passionate tech educator and content creator running a YouTube channel dedicated to coding tutorials and practical projects. Focusing on web development and modern JavaScript frameworks like React, he helps learners understand complex programming concepts through simple, hands-on examples. His goal is to make coding accessible, engaging, and fun for beginners and aspiring developers alike.</p>
                 </div>
                 <div className='h-[2px] w-full bg-zinc-800 mt-[50px] hr overflow-hidden'></div>
                 </div>
