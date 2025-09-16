@@ -31,7 +31,7 @@ function YoutVideos() {
   }
   ]
   return (
-    <div className='w-full h-[80vh] mt-[100px] border border-zinc-800 rounded-2xl  overflow-hidden '>
+    <div className='w-full h-[80vh] mt-[10px] border border-zinc-800 rounded-2xl  overflow-hidden '>
       <div className='YoutVideo_container h-[80vh] rounded-sm flex z-[999] justify-between  relative overflow-hidden'>
 
         <div

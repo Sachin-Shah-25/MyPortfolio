@@ -11,7 +11,7 @@ function Project({item,id}) {
     return (
         <div 
         className='pro w-60 overflow-hidden cursor-pointer relative'>
-            <div className='w-full h-[20vh] object-cover'>
+            <div className='w-full h-[24vh] object-cover'>
                 <img src={imgArr[id]} className='rounded-lg w-full h-full' alt="" />
             </div>
             <div className='title mt-3 w-full text-lg font-bold text-wrap'><p className='text-2xl text-zinc-500'>{item.name.substring(0,15)+"..."}</p></div>

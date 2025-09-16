@@ -32,7 +32,7 @@ function MyProjects() {
     return (
         <div className='w-full h-[80vh] mt-[100px] overflow-hidden'>
             <div className='project_container h-[55vh] flex z-[999] justify-between  relative overflow-hidden'>
-                <div className='p-2 text-2xl right-2 rounded-full relative z-[999] flex items-center'> <div className=' cursor-pointer bg-zinc-800 p-2 text-2xl rounded-full'>
+                <div className=' text-2xl right-3 bottom-[-5px] rounded-full relative z-[999] flex items-end'> <div className='rotate-[30deg] cursor-pointer bg-zinc-800 p-2 text-2xl rounded-full'>
                     <FaChevronLeft /> </div></div>
                 <motion.div 
                 initial={{x:0}}
@@ -51,7 +51,7 @@ function MyProjects() {
                       }
                     </div>
                 </motion.div>
-                <div className='flex items-center p-2 left-2 text-2xl rounded-full relative z-[999]'> <div className='bg-zinc-800 p-2 cursor-pointer text-2xl rounded-full'>
+                <div className='flex items-end left-3 bottom-[-5px] text-2xl rounded-full relative z-[999]'> <div className= 'rotate-[300deg] bg-zinc-800 p-2 cursor-pointer text-2xl rounded-full'>
                     <FaChevronRight /> </div> </div>
             </div>
         </div>

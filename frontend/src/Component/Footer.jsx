@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 function Footer() {
     return (
-        <div className='w-full py-20  flex flex-col justify-center items-center'>
+        <div className='w-full py-20 mt-20 flex flex-col justify-center items-center'>
             <div className=' flex items-center'>
                 <div className='w-10 h-10'>
                     <img src={user1} className='w-full h-full object-contain' alt="" />
