@@ -173,6 +173,7 @@ animation: hr 3s linear infinite alternate-reverse
     height: auto;
     top: -280px;
     transition: all 0.3s ease-in-out;
+   
   }
   .nav_open{
     display:  block;

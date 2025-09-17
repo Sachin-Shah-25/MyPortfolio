@@ -31,12 +31,12 @@ function YoutVideos() {
   }
   ]
   return (
-    <div className='w-full h-[80vh] mt-[10px] border border-zinc-800 rounded-2xl  overflow-hidden '>
-      <div className='YoutVideo_container h-[80vh] rounded-sm flex z-[999] justify-between  relative overflow-hidden'>
+    <div className='w-full h-[450px] overflow-y-auto mt-[90px] border border-zinc-800 rounded-2xl  '>
+      <div className='YoutVideo_container h-full rounded-sm flex z-[999] justify-between overflow-y-auto  relative'>
 
         <div
           ref={ref}
-          className='yt w-full flex   flex-wrap px-2 justify-around gap-y-5 overflow-x-hidden  overflow-y-auto pt-5'>
+          className='yt w-full h-full flex flex-wrap justify-evenly gap-y-2 items-start  overflow-x-hidden  overflow-y-auto pt-5'>
           {
            arr.map((item, ind) => {
               return <MyVideos ref={ref} key={ind} item={item} index={ind}  ></MyVideos>
