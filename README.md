@@ -26,14 +26,14 @@ It showcases my skills, projects, and content as a tech educator and content cre
 ## 📸 Screenshots
 
 ### 🏠 Home Section
-![Home](../frontend/src/assets/p1.png)
+![Home](./frontend/src/assets/p1.png)
 
 ### 💻 Projects Section (with Drag Animation)
-![Projects](../frontend/src/assets/p2.png)
-![Projects Drag](../frontend/src/assets/p3.png)
+![Projects](./frontend/src/assets/p2.png)
+![Projects Drag](./frontend/src/assets/p3.png)
 
 ### 👤 About Section
-![About](../frontend/src/assets/p4.png)
+![About](./frontend/src/assets/p4.png)
 
 ---
 
